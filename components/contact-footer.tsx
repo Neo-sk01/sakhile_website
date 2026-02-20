@@ -28,7 +28,7 @@ export function ContactFooter() {
 
             <div className="mt-14 flex flex-wrap justify-center gap-10 sm:gap-14">
               {[
-                { icon: Mail, label: "info@skdesigns.co", href: "mailto:info@skdesigns.co" },
+                { icon: Mail, label: "sakhile@skarchidesigns.com", href: "mailto:sakhile@skarchidesigns.com" },
                 { icon: Phone, label: "+27 12 345 6789", href: "tel:+27123456789" },
                 { icon: MapPin, label: "Johannesburg, SA", href: "#" },
                 { icon: Instagram, label: "sk_designs_za", href: "https://www.instagram.com/sk_designs_za/" },
@@ -50,7 +50,7 @@ export function ContactFooter() {
             </div>
 
             <a
-              href="mailto:info@skdesigns.co"
+              href="mailto:sakhile@skarchidesigns.com"
               className="btn-wire mt-14 inline-block px-12 py-4 text-[13px] font-semibold uppercase tracking-[0.2em]"
             >
               Start a Conversation
