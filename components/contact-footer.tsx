@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { Mail, Phone, MapPin } from "lucide-react"
+import { Mail, Phone, MapPin, Instagram, Facebook } from "lucide-react"
 
 export function ContactFooter() {
   return (
@@ -26,11 +26,13 @@ export function ContactFooter() {
               project.
             </p>
 
-            <div className="mt-14 grid gap-10 sm:grid-cols-3">
+            <div className="mt-14 flex flex-wrap justify-center gap-10 sm:gap-14">
               {[
                 { icon: Mail, label: "info@skdesigns.co", href: "mailto:info@skdesigns.co" },
                 { icon: Phone, label: "+27 12 345 6789", href: "tel:+27123456789" },
                 { icon: MapPin, label: "Johannesburg, SA", href: "#" },
+                { icon: Instagram, label: "sk_designs_za", href: "https://www.instagram.com/sk_designs_za/" },
+                { icon: Facebook, label: "SkDezignz", href: "https://www.facebook.com/SkDezignz?rdid=5k04lvIbGutQKHmt&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1LFZrYDda2%2F%3Fref%3D1#" },
               ].map((item) => (
                 <a
                   key={item.label}
@@ -40,7 +42,7 @@ export function ContactFooter() {
                   <div className="flex h-14 w-14 items-center justify-center bg-foreground transition-all duration-300 group-hover:bg-accent group-hover:shadow-lg group-hover:shadow-accent/20">
                     <item.icon className="h-5 w-5 text-background" />
                   </div>
-                  <span className="text-sm font-medium text-foreground transition-colors group-hover:text-accent hover-underline-sweep">
+                  <span className="mt-2 text-sm font-medium text-foreground transition-colors group-hover:text-accent hover-underline-sweep">
                     {item.label}
                   </span>
                 </a>

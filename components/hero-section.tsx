@@ -6,15 +6,15 @@ import { ArrowDown } from "lucide-react"
 
 const heroImages = [
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.13-nwa6aKU29ds7F8Vg3JshrtudNa2Ll1.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.17.jpeg",
     alt: "Contemporary Residence by SK Designs",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.16-yXQ45XB0RNUYHLYhuOPZCwULCLuKdd.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.13.jpeg",
     alt: "Luxury Bedroom Suite by SK Designs",
   },
   {
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.18%20%282%29-3IJPF44d37iVDgERDKI0zppVH3FYyh.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.26%20(2).jpeg",
     alt: "SK's Cafe Exterior by SK Designs",
   },
 ]
@@ -70,7 +70,7 @@ export function HeroSection() {
           <div className="h-px w-16 bg-accent" />
         </div>
 
-        <h1 className="font-serif text-5xl font-bold leading-[1.1] tracking-tight sm:text-7xl lg:text-[5.5rem]">
+        <h1 className="font-serif text-[43px] font-bold leading-[1.1] tracking-tight sm:text-[65px] lg:text-[5rem]">
           <span className="block text-background">Create and</span>
           {/* Red line cutting through the headline */}
           <span className="relative block">
@@ -79,7 +79,7 @@ export function HeroSection() {
           </span>
         </h1>
 
-        <p className="mx-auto mt-8 max-w-xl text-base leading-relaxed text-background/60 sm:text-lg">
+        <p className="mx-auto mt-8 max-w-xl text-sm leading-relaxed text-background/60 sm:text-base">
           Transforming vision into immersive spaces through cutting-edge 3D
           architectural visualization and design.
         </p>

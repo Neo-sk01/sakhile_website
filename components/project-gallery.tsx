@@ -11,7 +11,7 @@ const projects = [
     category: "Interior",
     description:
       "Contemporary TV wall unit with sculptural wood slat accents and warm ambient lighting.",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.14%20%281%29-edlP14NG6XHoqw7VpTE2iXKun3gXiJ.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.22%20(1).jpeg",
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const projects = [
     category: "Interior",
     description:
       "Sophisticated bedroom with dark wood accent wall, integrated workspace, and ambient cove lighting.",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.16-yXQ45XB0RNUYHLYhuOPZCwULCLuKdd.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.18.jpeg",
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     category: "Commercial",
     description:
       "Open-plan restaurant with floor-to-ceiling glass walls, copper pendant lighting, and modern furnishings.",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.17-PeNRBZoL8msOKC0fobXMslchUii1Cu.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.19.jpeg",
   },
   {
     id: 4,
@@ -35,7 +35,7 @@ const projects = [
     category: "Commercial",
     description:
       "Industrial-chic cafe interior with open shelving, botanical accents, and artisan copper fixtures.",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.18-mcyAQUWTUqSzZzXdwT4fFDmQAgIYKb.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.26%20(3).jpeg",
   },
   {
     id: 5,
@@ -43,7 +43,7 @@ const projects = [
     category: "Architecture",
     description:
       "Modern commercial facade with bold signage, glass storefront, and minimalist silhouette.",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.18%20%282%29-3IJPF44d37iVDgERDKI0zppVH3FYyh.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.20.jpeg",
   },
   {
     id: 6,
@@ -51,7 +51,7 @@ const projects = [
     category: "Architecture",
     description:
       "Two-storey modern home with mixed cladding, rooftop terrace, and covered entertaining area.",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.13-nwa6aKU29ds7F8Vg3JshrtudNa2Ll1.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.26%20(1).jpeg",
   },
   {
     id: 7,
@@ -59,7 +59,7 @@ const projects = [
     category: "Commercial",
     description:
       "Spacious cafe lounge with sculptural wall art, oversized windows, and copper globe pendants.",
-    src: "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.18%20%281%29-4E2P2uhrXJsjQq6Z2ikPrxyqLLar97.jpeg",
+    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.18%20(2).jpeg",
   },
 ]
 
@@ -160,8 +160,8 @@ export function ProjectGallery() {
                 setVisibleItems(new Set())
               }}
               className={`relative px-6 py-2.5 text-xs font-semibold uppercase tracking-[0.2em] transition-all duration-300 ${activeCategory === cat
-                  ? "bg-foreground text-background"
-                  : "text-muted-foreground hover:text-foreground"
+                ? "bg-foreground text-background"
+                : "text-muted-foreground hover:text-foreground"
                 }`}
             >
               {cat}
@@ -187,8 +187,8 @@ export function ProjectGallery() {
                 }}
                 onClick={() => openLightbox(index)}
                 className={`group relative overflow-hidden bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-all duration-700 ease-out ${visibleItems.has(project.id)
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-10"
+                  ? "opacity-100 translate-y-0"
+                  : "opacity-0 translate-y-10"
                   } ${isLarge ? "aspect-[4/3] sm:col-span-2 lg:col-span-1 lg:row-span-1" : "aspect-[4/3]"}`}
                 style={{ transitionDelay: `${index * 80}ms` }}
               >
@@ -309,8 +309,8 @@ export function ProjectGallery() {
                   key={i}
                   onClick={() => setLightboxIndex(i)}
                   className={`h-0.5 transition-all duration-300 ${lightboxIndex === i
-                      ? "w-8 bg-accent"
-                      : "w-3 bg-background/20 hover:bg-background/40"
+                    ? "w-8 bg-accent"
+                    : "w-3 bg-background/20 hover:bg-background/40"
                     }`}
                   aria-label={`Go to image ${i + 1}`}
                 />

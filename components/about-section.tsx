@@ -103,7 +103,7 @@ export function AboutSection() {
         {/* Decorative background image */}
         <div className="absolute inset-0 opacity-[0.04]">
           <Image
-            src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202026-02-17%20at%2012.56.17-PeNRBZoL8msOKC0fobXMslchUii1Cu.jpeg"
+            src="/images/WhatsApp%20Image%202026-02-17%20at%2012.56.19%20(1).jpeg"
             alt=""
             fill
             className="object-cover"
