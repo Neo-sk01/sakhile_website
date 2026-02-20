@@ -95,9 +95,31 @@ export function ContactFooter() {
               ))}
             </div>
 
-            <p className="text-[11px] text-background/30">
-              {"\u00A9"} {new Date().getFullYear()} SK Designs
-            </p>
+            <div className="flex items-center gap-6">
+              <div className="flex items-center gap-4">
+                <a
+                  href="https://www.instagram.com/sk_designs_za/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/40 transition-colors hover:text-accent"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-4 w-4" />
+                </a>
+                <a
+                  href="https://www.facebook.com/SkDezignz?rdid=5k04lvIbGutQKHmt&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1LFZrYDda2%2F%3Fref%3D1#"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-background/40 transition-colors hover:text-accent"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-4 w-4" />
+                </a>
+              </div>
+              <p className="text-[11px] text-background/30">
+                {"\u00A9"} {new Date().getFullYear()} SK Designs
+              </p>
+            </div>
           </div>
         </div>
       </footer>
