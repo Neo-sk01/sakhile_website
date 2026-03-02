@@ -15,14 +15,14 @@ const projects = [
   {
     id: 2,
     title: "Project Design 2",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.13%20(1).jpeg",
   },
   {
     id: 3,
     title: "Project Design 3",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.13%20(2).jpeg",
   },
@@ -36,14 +36,14 @@ const projects = [
   {
     id: 5,
     title: "Project Design 5",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.14%20(1).jpeg",
   },
   {
     id: 6,
     title: "Project Design 6",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.14.jpeg",
   },
@@ -57,14 +57,14 @@ const projects = [
   {
     id: 8,
     title: "Project Design 8",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.17.jpeg",
   },
   {
     id: 9,
     title: "Project Design 9",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.18%20(1).jpeg",
   },
@@ -78,14 +78,14 @@ const projects = [
   {
     id: 11,
     title: "Project Design 11",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.18.jpeg",
   },
   {
     id: 12,
     title: "Project Design 12",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.19%20(1).jpeg",
   },
@@ -99,14 +99,14 @@ const projects = [
   {
     id: 14,
     title: "Project Design 14",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.20.jpeg",
   },
   {
     id: 15,
     title: "Project Design 15",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.22%20(1).jpeg",
   },
@@ -120,14 +120,14 @@ const projects = [
   {
     id: 17,
     title: "Project Design 17",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.23%20(1).jpeg",
   },
   {
     id: 18,
     title: "Project Design 18",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.23.jpeg",
   },
@@ -141,14 +141,14 @@ const projects = [
   {
     id: 20,
     title: "Project Design 20",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.24.jpeg",
   },
   {
     id: 21,
     title: "Project Design 21",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.25%20(1).jpeg",
   },
@@ -162,14 +162,14 @@ const projects = [
   {
     id: 23,
     title: "Project Design 23",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.26%20(1).jpeg",
   },
   {
     id: 24,
     title: "Project Design 24",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.26%20(2).jpeg",
   },
@@ -183,14 +183,14 @@ const projects = [
   {
     id: 26,
     title: "Project Design 26",
-    category: "Commercial",
+    category: "Outdoor",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.26.jpeg",
   },
   {
     id: 27,
     title: "Project Design 27",
-    category: "Architecture",
+    category: "Landscape",
     description: "Curated 3D architectural visualization and design for modern living.",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.27%20(1).jpeg",
   },
@@ -204,16 +204,22 @@ const projects = [
   {
     id: 29,
     title: "Project Design 29",
-    category: "Commercial",
-    description: "Curated 3D architectural visualization and design for modern living.",
+    category: "Outdoor",
     src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.28.jpeg",
   },
 ]
 
-const categories = [
-  "All",
-  ...Array.from(new Set(projects.map((p) => p.category))),
-]
+const CATEGORY_ORDER = ["Interior", "Outdoor", "Landscape"]
+
+const categories = ["All", ...CATEGORY_ORDER]
+
+// Build a flat indexed list that respects the grouped order for lightbox navigation
+function buildGroupedList(activeCategory: string) {
+  if (activeCategory !== "All") {
+    return projects.filter((p) => p.category === activeCategory)
+  }
+  return CATEGORY_ORDER.flatMap((cat) => projects.filter((p) => p.category === cat))
+}
 
 export function ProjectGallery() {
   const [activeCategory, setActiveCategory] = useState("All")
@@ -221,10 +227,16 @@ export function ProjectGallery() {
   const [visibleItems, setVisibleItems] = useState<Set<number>>(new Set())
   const itemRefs = useRef<Map<number, HTMLElement>>(new Map())
 
-  const filtered =
+  const filtered = buildGroupedList(activeCategory)
+
+  // Grouped structure for the "All" view
+  const groups: { cat: string; items: typeof projects }[] =
     activeCategory === "All"
-      ? projects
-      : projects.filter((p) => p.category === activeCategory)
+      ? CATEGORY_ORDER.map((cat) => ({
+        cat,
+        items: projects.filter((p) => p.category === cat),
+      }))
+      : [{ cat: activeCategory, items: filtered }]
 
   // Intersection observer for scroll-reveal animation
   useEffect(() => {
@@ -276,6 +288,17 @@ export function ProjectGallery() {
     return () => window.removeEventListener("keydown", handleKey)
   }, [lightboxIndex, closeLightbox, goNext, goPrev])
 
+  // Compute flattened index for lightbox from group + local index
+  const getGlobalIndex = (cat: string, localIndex: number) => {
+    if (activeCategory !== "All") return localIndex
+    let offset = 0
+    for (const group of groups) {
+      if (group.cat === cat) return offset + localIndex
+      offset += group.items.length
+    }
+    return localIndex
+  }
+
   return (
     <section id="gallery" className="bg-background py-28 lg:py-36">
       {/* 1px red divider at top of section */}
@@ -320,59 +343,82 @@ export function ProjectGallery() {
           ))}
         </div>
 
-        {/* Masonry-inspired gallery grid */}
-        <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {filtered.map((project, index) => {
-            // Create visual variety with different aspect ratios
-            const isLarge = index === 0 || index === 3
-            return (
-              <button
-                key={project.id}
-                data-project-id={project.id}
-                ref={(el) => {
-                  if (el) itemRefs.current.set(project.id, el)
-                }}
-                onClick={() => openLightbox(index)}
-                className={`group relative overflow-hidden bg-secondary focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-all duration-700 ease-out ${visibleItems.has(project.id)
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
-                  } ${isLarge ? "aspect-[4/3] sm:col-span-2 lg:col-span-1 lg:row-span-1" : "aspect-[4/3]"}`}
-                style={{ transitionDelay: `${index * 80}ms` }}
-              >
-                <Image
-                  src={project.src}
-                  alt={project.title}
-                  fill
-                  className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
-                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                />
-
-                {/* Subtle bottom gradient - always visible */}
-                <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
-
-                {/* Expand icon */}
-                <div className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center bg-foreground/60 text-background opacity-0 transition-all duration-300 group-hover:opacity-100 backdrop-blur-sm">
-                  <Expand className="h-4 w-4" />
+        {/* Grouped gallery */}
+        <div className="space-y-20">
+          {groups.map(({ cat, items }) => (
+            <div key={cat}>
+              {/* Category heading — only shown in "All" view */}
+              {activeCategory === "All" && (
+                <div className="mb-8 flex items-center gap-5">
+                  <div className="h-px flex-1 bg-border" />
+                  <div className="flex items-center gap-3">
+                    <span className="h-1.5 w-1.5 rounded-full bg-accent" />
+                    <h3 className="font-serif text-xl font-bold tracking-wide text-foreground">
+                      {cat}
+                    </h3>
+                    <span className="text-xs font-medium text-muted-foreground">
+                      {items.length} projects
+                    </span>
+                  </div>
+                  <div className="h-px flex-1 bg-border" />
                 </div>
+              )}
 
-                {/* Info overlay */}
-                <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end p-6">
-                  <span className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-accent opacity-0 transition-all duration-500 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0">
-                    {project.category}
-                  </span>
-                  <h3 className="text-lg font-bold text-background transition-all duration-500 translate-y-2 group-hover:translate-y-0">
-                    {project.title}
-                  </h3>
-                  <p className="mt-1.5 text-sm text-background/70 leading-relaxed opacity-0 transition-all duration-500 delay-75 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 line-clamp-2">
-                    {project.description}
-                  </p>
-                </div>
+              {/* Grid for this category */}
+              <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                {items.map((project, localIndex) => {
+                  const globalIndex = getGlobalIndex(cat, localIndex)
+                  return (
+                    <button
+                      key={project.id}
+                      data-project-id={project.id}
+                      ref={(el) => {
+                        if (el) itemRefs.current.set(project.id, el)
+                      }}
+                      onClick={() => openLightbox(globalIndex)}
+                      className={`group relative overflow-hidden bg-secondary aspect-[4/3] focus:outline-none focus-visible:ring-2 focus-visible:ring-accent transition-all duration-700 ease-out ${visibleItems.has(project.id)
+                        ? "opacity-100 translate-y-0"
+                        : "opacity-0 translate-y-10"
+                        }`}
+                      style={{ transitionDelay: `${localIndex * 80}ms` }}
+                    >
+                      <Image
+                        src={project.src}
+                        alt={project.title}
+                        fill
+                        className="object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      />
 
-                {/* Red accent line on hover — 2px */}
-                <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-accent transition-all duration-500 group-hover:w-full" />
-              </button>
-            )
-          })}
+                      {/* Subtle bottom gradient */}
+                      <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-foreground/60 via-foreground/20 to-transparent opacity-70 transition-opacity duration-500 group-hover:opacity-100" />
+
+                      {/* Expand icon */}
+                      <div className="absolute right-4 top-4 flex h-9 w-9 items-center justify-center bg-foreground/60 text-background opacity-0 transition-all duration-300 group-hover:opacity-100 backdrop-blur-sm">
+                        <Expand className="h-4 w-4" />
+                      </div>
+
+                      {/* Info overlay */}
+                      <div className="absolute inset-x-0 bottom-0 flex flex-col justify-end p-6">
+                        <span className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-accent opacity-0 transition-all duration-500 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0">
+                          {project.category}
+                        </span>
+                        <h3 className="text-lg font-bold text-background transition-all duration-500 translate-y-2 group-hover:translate-y-0">
+                          {project.title}
+                        </h3>
+                        <p className="mt-1.5 text-sm text-background/70 leading-relaxed opacity-0 transition-all duration-500 delay-75 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 line-clamp-2">
+                          {project.description}
+                        </p>
+                      </div>
+
+                      {/* Red accent line on hover */}
+                      <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-accent transition-all duration-500 group-hover:w-full" />
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
 
@@ -449,7 +495,7 @@ export function ProjectGallery() {
               </p>
             </div>
 
-            {/* Counter */}
+            {/* Counter dots */}
             <div className="mt-6 flex items-center justify-center gap-2">
               {filtered.map((_, i) => (
                 <button
