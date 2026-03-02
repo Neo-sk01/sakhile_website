@@ -4,31 +4,11 @@ import { useEffect, useState } from "react"
 import Image from "next/image"
 import { ArrowDown } from "lucide-react"
 
-const heroImages = [
-  {
-    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.17.jpeg",
-    alt: "Contemporary Residence by SK Designs",
-  },
-  {
-    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.13.jpeg",
-    alt: "Luxury Bedroom Suite by SK Designs",
-  },
-  {
-    src: "/images/WhatsApp%20Image%202026-02-17%20at%2012.56.26%20(2).jpeg",
-    alt: "SK's Cafe Exterior by SK Designs",
-  },
-]
-
 export function HeroSection() {
-  const [currentImage, setCurrentImage] = useState(0)
   const [loaded, setLoaded] = useState(false)
 
   useEffect(() => {
     setLoaded(true)
-    const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % heroImages.length)
-    }, 6000)
-    return () => clearInterval(interval)
   }, [])
 
   return (
@@ -36,24 +16,17 @@ export function HeroSection() {
       id="home"
       className="relative flex min-h-screen items-center justify-center overflow-hidden"
     >
-      {/* Sliding background images */}
-      {heroImages.map((img, i) => (
-        <div
-          key={img.src}
-          className="absolute inset-0 transition-opacity duration-[2000ms] ease-in-out"
-          style={{ opacity: currentImage === i ? 1 : 0 }}
-        >
-          <Image
-            src={img.src}
-            alt={img.alt}
-            fill
-            className="object-cover scale-105"
-            priority={i === 0}
-            sizes="100vw"
-          />
-        </div>
-      ))}
-
+      {/* Static background image */}
+      <div className="absolute inset-0">
+        <Image
+          src="/images/posh_white_livingarea.jpeg"
+          alt="Posh White Living Area by SK Designs"
+          fill
+          className="object-cover transition-transform duration-[10s] ease-out scale-105"
+          priority
+          sizes="100vw"
+        />
+      </div>
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-foreground/65" />
 
@@ -99,18 +72,7 @@ export function HeroSection() {
           </a>
         </div>
 
-        {/* Slide indicators */}
-        <div className="mt-16 flex items-center justify-center gap-2">
-          {heroImages.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setCurrentImage(i)}
-              className={`h-0.5 transition-all duration-500 ${currentImage === i ? "w-10 bg-accent" : "w-5 bg-background/30"
-                }`}
-              aria-label={`Go to slide ${i + 1}`}
-            />
-          ))}
-        </div>
+
       </div>
 
       {/* Scroll indicator */}

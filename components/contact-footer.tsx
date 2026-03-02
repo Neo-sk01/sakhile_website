@@ -67,11 +67,11 @@ export function ContactFooter() {
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div className="flex items-center gap-3">
               <Image
-                src="/Untitled design.png"
+                src="/images/SK_Logo.svg"
                 alt="SK Designs Logo"
-                width={32}
-                height={32}
-                className="h-8 w-8 object-contain"
+                width={250}
+                height={80}
+                className="h-20 w-auto object-contain"
               />
               <div className="flex flex-col">
                 <span className="text-sm font-bold tracking-wide text-background">
