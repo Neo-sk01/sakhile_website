@@ -417,9 +417,6 @@ export function ProjectGallery() {
                         <span className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-accent opacity-0 transition-all duration-500 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0">
                           {project.category}
                         </span>
-                        <p className="mt-1.5 text-sm text-background/70 leading-relaxed opacity-0 transition-all duration-500 delay-75 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 line-clamp-2">
-                          {project.description}
-                        </p>
                       </div>
 
                       {/* Red accent line on hover */}
@@ -498,9 +495,6 @@ export function ProjectGallery() {
               <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-accent">
                 {filtered[lightboxIndex].category}
               </span>
-              <p className="mx-auto mt-2 max-w-lg text-sm text-background/50 leading-relaxed">
-                {filtered[lightboxIndex].description}
-              </p>
             </div>
 
             {/* Counter dots */}
