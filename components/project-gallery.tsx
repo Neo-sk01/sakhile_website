@@ -373,9 +373,6 @@ export function ProjectGallery() {
                     <h3 className="font-serif text-xl font-bold tracking-wide text-foreground">
                       {cat}
                     </h3>
-                    <span className="text-xs font-medium text-muted-foreground">
-                      {items.length} projects
-                    </span>
                   </div>
                   <div className="h-px flex-1 bg-border" />
                 </div>
@@ -420,9 +417,6 @@ export function ProjectGallery() {
                         <span className="mb-1.5 text-[10px] font-bold uppercase tracking-[0.25em] text-accent opacity-0 transition-all duration-500 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0">
                           {project.category}
                         </span>
-                        <h3 className="text-lg font-bold text-background transition-all duration-500 translate-y-2 group-hover:translate-y-0">
-                          {project.title}
-                        </h3>
                         <p className="mt-1.5 text-sm text-background/70 leading-relaxed opacity-0 transition-all duration-500 delay-75 translate-y-3 group-hover:opacity-100 group-hover:translate-y-0 line-clamp-2">
                           {project.description}
                         </p>
@@ -504,9 +498,6 @@ export function ProjectGallery() {
               <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-accent">
                 {filtered[lightboxIndex].category}
               </span>
-              <h3 className="mt-2 text-xl font-bold text-background">
-                {filtered[lightboxIndex].title}
-              </h3>
               <p className="mx-auto mt-2 max-w-lg text-sm text-background/50 leading-relaxed">
                 {filtered[lightboxIndex].description}
               </p>
