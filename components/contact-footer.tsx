@@ -29,8 +29,8 @@ export function ContactFooter() {
             <div className="mt-14 flex flex-wrap justify-center gap-10 sm:gap-14">
               {[
                 { icon: Mail, label: "sakhile@skarchidesigns.com", href: "mailto:sakhile@skarchidesigns.com" },
-                { icon: Phone, label: "+27 12 345 6789", href: "tel:+27123456789" },
-                { icon: MapPin, label: "Johannesburg, SA", href: "#" },
+                { icon: Phone, label: "084 917 0217", href: "tel:0849170217" },
+                { icon: MapPin, label: "10/8957 Kekana street, Daveyton Ext 2, 1520", href: "#" },
                 { icon: Instagram, label: "sk_designs_za", href: "https://www.instagram.com/sk_designs_za/" },
                 { icon: Facebook, label: "SkDezignz", href: "https://www.facebook.com/SkDezignz?rdid=5k04lvIbGutQKHmt&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1LFZrYDda2%2F%3Fref%3D1#" },
               ].map((item) => (
