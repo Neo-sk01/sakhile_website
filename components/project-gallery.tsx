@@ -223,9 +223,83 @@ const projects = [
     description: "Curated 3D architectural visualization for student housing developments.",
     src: "/images/student_accom(topview).jpeg",
   },
+
+  // ----------------------------------------
+  // Sandton View (10 images)
+  // ----------------------------------------
+  {
+    id: 30,
+    title: "Sandton View A — Front Elevation",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view_A(front).jpeg",
+  },
+  {
+    id: 31,
+    title: "Sandton View A — Central Entrance",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view_A(entrance).jpeg",
+  },
+  {
+    id: 32,
+    title: "Sandton View A — Street Frontage",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view_A(street_redcar).jpeg",
+  },
+  {
+    id: 33,
+    title: "Sandton View B — Street Approach",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view_B(street).jpeg",
+  },
+  {
+    id: 34,
+    title: "Unit Configuration Elevation",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view(units_numbered).jpeg",
+  },
+  {
+    id: 35,
+    title: "Sequential Unit Perspective",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view(units_numbered2).jpeg",
+  },
+  {
+    id: 36,
+    title: "Elevated Terrace Perspective",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view(aerial_terrace).jpeg",
+  },
+  {
+    id: 37,
+    title: "Aerial Courtyard Terraces",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view(rear_terraces).jpeg",
+  },
+  {
+    id: 38,
+    title: "Balcony Garden Frontage",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view(rear_balconies).jpeg",
+  },
+  {
+    id: 39,
+    title: "Garden-Side Elevation",
+    category: "Sandton View",
+    description: "Curated 3D architectural visualization for the Sandton View residential estate.",
+    src: "/images/sandton_view(garden_elevation).jpeg",
+  },
 ]
 
-const CATEGORY_ORDER = ["Exterior", "Interior", "Commercial", "Student Accommodation"]
+const CATEGORY_ORDER = ["Exterior", "Interior", "Commercial", "Student Accommodation", "Sandton View"]
 
 
 const categories = ["All", ...CATEGORY_ORDER]
